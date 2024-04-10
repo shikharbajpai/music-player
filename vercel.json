@@ -3,7 +3,6 @@
   "name": "music-player",
   "public": true,
   "routes": [
-    { "src": "/(.*)", "dest": "/$1.html" },
-    { "src": "songs/**/*", "use": "@vercel/static-build" }
+    { "src": "/(.*)", "dest": "/$1.html" }
   ]
 }
