@@ -1,13 +1,18 @@
 {
-    "version": 2,
-    "builds": [
-      { "src": "public/**/*", "use": "@vercel/static-build" }
-    ],
-    "routes": [
-      { "src": "/(.*)", "dest": "/$1" }
-    ],
-    "static": {
-      "source": "songs",
-      "destination": "/songs"
+  "version": 2,
+  "builds": [
+    { 
+      "src": "public/**/*", 
+      "use": "@vercel/static-build",
+      "config": {
+        "static": {
+          "source": "songs",
+          "destination": "/songs"
+        }
+      }
     }
-  }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/$1" }
+  ]
+}
