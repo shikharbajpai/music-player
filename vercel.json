@@ -5,14 +5,23 @@
       "src": "public/**/*", 
       "use": "@vercel/static-build",
       "config": {
-        "static": {
-          "source": "songs",
-          "destination": "/songs"
-        }
+        "zeroConfig": true
+      }
+    },
+    {
+      "src": "public/songs/**/*",
+      "use": "@vercel/static",
+      "config": {
+        "source": "songs",
+        "headers": [
+          {
+            "source": "/(.*)",
+            "headers": [
+              { "key": "Cache-Control", "value": "public, max-age=604800, immutable" }
+            ]
+          }
+        ]
       }
     }
-  ],
-  "routes": [
-    { "src": "/(.*)", "dest": "/$1" }
   ]
 }
