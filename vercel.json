@@ -1,8 +1,8 @@
 {
   "version": 2,
   "builds": [
-    { 
-      "src": "index.html", 
+    {
+      "src": "songs/**/*",
       "use": "@vercel/static-build",
       "config": {
         "zeroConfig": true
