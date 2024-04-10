@@ -1,36 +1,8 @@
 {
   "version": 2,
   "builds": [
-    {
-      "src": "index.html",
-      "use": "@vercel/static-build",
-      "config": {
-        "zeroConfig": true
-      }
-    },
-    {
-      "src": "css/**/*",
-      "use": "@vercel/static-build",
-      "config": {
-        "zeroConfig": true
-      }
-    },
-    {
-      "src": "js/**/*",
-      "use": "@vercel/static-build",
-      "config": {
-        "zeroConfig": true
-      }
-    },
-    {
-      "src": "songs/**/*",
-      "use": "@vercel/static-build",
-      "config": {
-        "zeroConfig": true
-      }
-    },
-    {
-      "src": "svgImages/**/*",
+    { 
+      "src": "index.html", 
       "use": "@vercel/static-build",
       "config": {
         "zeroConfig": true
