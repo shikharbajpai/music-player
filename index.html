@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utility.css">
+    <title>Free Music - Web Player: Free Music for everyone</title>
+</head>
+
+<body>
+    <div class="container flex bg-black">
+        <div class="left">
+            <div class="close">
+                <img src="svgImages/cross.svg" class="invert" width="30" alt="Cross Icon">
+            </div>
+            <div class="home bg-grey rounded m-1 p-1">
+                <div class="logo">
+                    <a href="/"><img src="svgImages/logo.svg" class="invert" width="110" alt="Logo"></a>
+                </div>
+                <ul>
+                    <li>
+                        <img src="svgImages/home.svg" class="invert" alt="Home"> Home
+                    </li>
+                    <li class="search">
+                        <img src="svgImages/search.svg" class="invert" alt="Search"> Search
+                    </li>
+                </ul>
+            </div>
+            <div class="library bg-grey rounded m-1 p-1">
+                <div class="heading">
+                    <img src="svgImages/playlist.svg" class="invert" alt="Playlist">
+                    <h2>Your Library</h2>
+                </div>
+                <div class="songList">
+                    <ul></ul>
+                </div>
+                <div class="footer">
+                    <div class="mr-16"><a href="/"><span>Legal</span></a></div>
+                    <div class="mr-16"><a href="/"><span>Safety &amp;Privacy Center</span></a></div>
+                    <div class="mr-16"><a href="/"><span>Privacy Policy</span></a></div>
+                    <div class="mr-16"><a href="/"><span>Cookies</span></a></div>
+                    <div class="mr-16"><a href="/"><span>About Ads</span></a></div>
+                    <div class="mr-16"><a href="/"><span>Accessibility</span></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="right bg-grey rounded">
+            <div class="header">
+                <div class="nav">
+                    <div class="hamburgerContainer">
+                        <img src="svgImages/hamburger.svg" class="invert hamburger" alt="Hamburger Icon">
+                        <img src="svgImages/leftarrow.svg" alt="left arrow icon">
+                        <img src="svgImages/rightarrow.svg" alt="right arrow icon">
+                    </div>
+                </div>
+                <!-- Search Bar -->
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="What do you want to play?">
+                    <button id="searchButton"><img src="svgImages/search.svg" class="invert" alt="Search Icon"></button>
+                </div>
+                <div class="buttons">
+                    <a href="signup.html"><button class="signupbtn">Sign up</button></a>
+                    <a href="login.html"><button class="loginbtn">Log in</button></a>
+                </div>
+            </div>
+            <div class="section">
+                <div class="mainheading">
+                    <h2>Free Music Playlists</h2>
+                    <span>Show all</span>
+                </div>
+                <div class="cardContainer"></div>
+                <div class="playbar">
+                    <div class="seekbar">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="abovebar">
+                        <div class="songinfo"></div>
+                        <div class="songbuttons">
+                            <img width="35" id="previous" src="svgImages/prevsong.svg" alt="Previous Button">
+                            <img width="35" id="play" src="svgImages/play.svg" alt="Play Button">
+                            <img width="35" id="next" src="svgImages/nextsong.svg" alt="Next Button">
+                        </div>
+                        <div class="timevol">
+                            <div class="songtime"></div>
+                            <div class="volume">
+                                <img src="svgImages/volume.svg" alt="Volume Icon">
+                                <div class="range">
+                                    <input type="range" name="volume" id="volume">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-footer">
+                <div class="footer-section">
+                    <ul>
+                      <p class="footer-heading"><a href="#">About</a></p>
+                      <li><a href="#">Jobs</a></li>
+                      <li><a href="#">For the Record</a></li>
+                    </ul>
+                    <ul>
+                        <p class="footer-heading"><a href="#">For Artists</a></p>
+                        <li><a href="#">Developers</a></li>
+                        <li><a href="#">Advertising</a></li>
+                        <li><a href="#">Investors</a></li>
+                        <li><a href="#">Vendors</a></li>
+                      </ul>
+                      <ul>
+                        <p class="footer-heading"><a href="#">Support</a></p>
+                        <li><a href="#">Free Mobile App</a></li>
+                      </ul>
+                      <ul>
+                        <p class="footer-heading"><a href="#">Premium Plans</a></p>
+                        <li><a href="#">Premium Individual</a></li>
+                        <li><a href="#">Premium Duo</a></li>
+                        <li><a href="#">Premium Family</a></li>
+                        <li><a href="#">Premium Student</a></li>
+                        <li><a href="#">Spotify Free</a></li>
+                      </ul>
+                      <ul class="socialIconSection">
+                        <div class="socialIcons">
+                            <div class="icons">
+                                <img src="svgImages/instagram.svg" class="invert" alt="instagram icon">
+                            </div>
+                            <div class="icons">
+                                <img src="svgImages/twitter.svg" class="invert" alt="twitter icon">
+                            </div>
+                            <div class="icons">
+                                <img src="svgImages/facebook.svg" class="invert" alt="facebook icon">
+                            </div>
+                        </div>
+                      </ul>
+            </div>
+            <hr>
+            <p>© 2024 Free Music Application | Shikhar Bajpai</p>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
