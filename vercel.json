@@ -3,6 +3,8 @@
   "name": "music-player",
   "public": true,
   "routes": [
-    { "src": "/(.*)", "dest": "/$1.html" }
+    { "src": "/(.*)", "dest": "/$1.html" },
+    { "handle": "filesystem" },
+    { "src": "/(.*)", "status": 404, "dest": "/other-404.html" }
   ]
 }
