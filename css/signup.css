@@ -1,0 +1,159 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.main-section {
+    width: 100%;
+    padding: 32px 0px 32px 51px;
+}
+
+.sub-section {
+    display: flex;
+    justify-content: center;
+    padding: 32px;
+}
+
+.signup-card {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0px;
+}
+
+.signup-container {
+    box-sizing: content-box;
+    padding: 0px 32px;
+}
+
+.signup-container h1 {
+    margin-bottom: 40px;
+}
+
+.form {
+    display: block;
+    width: 100%;
+    padding: 0px;
+    border: 0px;
+}
+
+.form p {
+    line-height: 1.5;
+    font-weight: 700;
+    overflow-wrap: break-word;
+}
+
+.input-container {
+    padding: 8px;
+}
+
+.input-container input {
+    background-color: #121212;
+    padding: 16px 12px;
+    width: 100%;
+    border: 1px solid #fff;
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+    margin-block: 0px;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.m-8 {
+    margin: 8px;
+}
+
+.phone-container a {
+    text-decoration: underline;
+    font-size: 16px;
+    font-weight: 700;
+    color: #1ed760;
+}
+
+.next-button {
+    margin-top: 20px;
+    font-size: 20px;
+    height: 60px;
+    width: 100%;
+    display: block;
+    padding: 0px;
+    background-color: #1ed760;
+    font-weight: 700;
+    border: 0px;
+    border-radius: 9999px;
+    cursor: pointer;
+}
+
+.horizontalbar {
+    margin-top: 32px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.horizontalbar::before {
+    content: " ";
+    height: 1px;
+    background-color: #878787;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    right: 0px;
+}
+
+.horizontalbar span {
+    padding: 0px 12px;
+    position: relative;
+    display: inline-block;
+}
+
+.button-links {
+    margin-top: 32px;
+}
+
+.signup-buttons {
+    background-color: #121212;
+    border: 1px solid #fff;
+    margin-top: 20px;
+    font-size: 20px;
+    height: 60px;
+    width: 100%;
+    display: block;
+    padding: 0px;
+    font-weight: 700;
+    border-radius: 9999px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.signup-buttons span {
+    display: flex;
+    align-items: center;
+}
+
+.signup-buttons img {
+    margin-left: 25px;
+    margin-right: 25%;
+}
+
+.signup-buttons:hover {
+    background-color: #878787;
+    cursor: pointer;
+}
+
+.login-link {
+    font-size: 20px;
+    margin-top: 32px;
+    display: block;
+    text-align: center;
+    color: #6a6a6a;
+}
+
+.login-link a {
+    color: #fff;
+}
