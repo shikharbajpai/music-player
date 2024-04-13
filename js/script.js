@@ -25,7 +25,7 @@ async function getSongs(folder) {
         response = await a.text();
     } else {
         // Otherwise, fetch the MP3 files directly
-        let a = await fetch(`/${folder}`);
+        let a = await fetch(`/${folder}/`);
         response = await a.blob(); // Use blob() to get the response as a Blob object
     }
     let div = document.createElement("div");
