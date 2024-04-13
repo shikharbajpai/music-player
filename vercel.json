@@ -4,7 +4,10 @@
   "public": true,
   "routes": [
     { "src": "/(.*)", "dest": "/$1.html" },
+    { "src": "/songs/", "dest": "/songs/" },
+    { "src": "/songs/freemusic/", "dest": "/songs/freemusic/" },
+    { "src": "/songs/populartracks/", "dest": "/songs/populartracks/" },
     { "src": "/songs/freemusic/(.*)", "dest": "/songs/freemusic/$1" },
-    { "src": "/songs/paidmusic/(.*)", "dest": "/songs/paidmusic/$1" }
+    { "src": "/songs/populartracks/(.*)", "dest": "/songs/paidmusic/$1" }
   ]
 }
