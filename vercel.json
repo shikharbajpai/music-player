@@ -4,8 +4,8 @@
   "public": true,
   "routes": [
     { "src": "/(.*)", "dest": "/$1.html" },
-    { "src": "/songs/(.*)", "dest": "/songs/$1" },
-    { "src": "/songs/freemusic/(.*)", "dest": "/songs/freemusic/$1" },
-    { "src": "/songs/freemusic/Hazy After Hours.mp3", "dest": "/songs/freemusic/Hazy%20After%20Hours.mp3" }
+    { "src": "/songs/(.*)", "dest": "/.vercel/output/static/songs/$1" },
+    { "src": "/songs/freemusic/(.*)", "dest": "/.vercel/output/static/songs/freemusic/$1" },
+    { "src": "/songs/freemusic/Hazy After Hours.mp3", "dest": "/.vercel/output/static/songs/freemusic/Hazy%20After%20Hours.mp3" }
   ]
 }
