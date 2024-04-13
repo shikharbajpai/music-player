@@ -18,8 +18,16 @@ function secondsToMinutesSeconds(seconds) {
 
 async function getSongs(folder) {
     currentFolder = folder;
-    let a = await fetch(`/${folder}/`);
-    let response = await a.text();
+    let response;
+    if (folder === "") {
+        // If fetching the root directory, specify the index.html file
+        let a = await fetch("/");
+        response = await a.text();
+    } else {
+        // Otherwise, fetch the MP3 files directly
+        let a = await fetch(`/${folder}`);
+        response = await a.blob(); // Use blob() to get the response as a Blob object
+    }
     let div = document.createElement("div");
     div.innerHTML = response;
     let as = div.getElementsByTagName("a");
