@@ -6,7 +6,7 @@
     { "src": "/(.*)", "dest": "/$1.html" },
     { "src": "/songs/(.*)", "dest": "/songs/$1" },
     { "src": "/songs/freemusic/(.*)", "dest": "/songs/freemusic/$1" },
-    { "src": "/songs/populartracks/(.*)", "dest": "/songs/paidmusic/$1" },
-    { "src": "/songs/freemusic/Hazy%20After%20Hours./", "dest": "/songs/freemusic/Hazy After Hours.mp3" }
+    { "src": "/songs/paidmusic/(.*)", "dest": "/songs/populartracks/$1" },
+    { "src": "/songs/freemusic/Hazy After Hours.mp3", "dest": "/songs/freemusic/Hazy%20After%20Hours." }
   ]
 }
