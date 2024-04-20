@@ -1,17 +1,14 @@
 {
   "routes": [
     {
-      "src": "/(.*\.css)",
+      "src": "/(.*\\.css)",
       "headers": { "Content-Type": "text/css" },
       "dest": "/$1"
     },
     {
-      "src": "/(.*\.js)",
+      "src": "/(.*\\.js)",
       "headers": { "Content-Type": "application/javascript" },
       "dest": "/$1"
-    },
-    {
-      "handle": "filesystem"
     },
     {
       "src": "/(.*)",
