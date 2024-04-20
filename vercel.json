@@ -7,6 +7,5 @@
     { "src": "/songs/(.*)", "dest": "/songs/$1" },
     { "src": "/songs/freemusic/(.*)", "dest": "/songs/freemusic/$1" },
     { "src": "/songs/freemusic/Hazy After Hours.mp3", "dest": "/songs/freemusic/Hazy%20After%20Hours.mp3" }
-  ],
-  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+  ]
 }
