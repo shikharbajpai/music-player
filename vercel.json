@@ -1,17 +1,21 @@
 {
-"rewrites": [
-{ "source": "/(.)", "destination": "/index.html" }
-],
-"routes": [
-{
-"src": "/(.\.css)",
-"headers": { "Content-Type": "text/css" },
-"dest": "/$1"
-},
-{
-"src": "/(.*\.js)",
-"headers": { "Content-Type": "application/javascript" },
-"dest": "/$1"
-}
-]
+  "routes": [
+    {
+      "src": "/(.*\.css)",
+      "headers": { "Content-Type": "text/css" },
+      "dest": "/$1"
+    },
+    {
+      "src": "/(.*\.js)",
+      "headers": { "Content-Type": "application/javascript" },
+      "dest": "/$1"
+    },
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
 }
