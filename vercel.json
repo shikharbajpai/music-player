@@ -16,6 +16,14 @@
         "dest": "/$1"
       },
       {
+        "src": "/songs/freemusic/(.*)",
+        "dest": "/songs/freemusic/$1"
+      },
+      {
+        "src": "/songs/(.*)",
+        "dest": "/songs/$1"
+      },
+      {
         "src": "/(.*)",
         "dest": "/index.html"
       }
