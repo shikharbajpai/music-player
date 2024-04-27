@@ -105,3 +105,56 @@
 .login-link a {
     color: #fff;
 }
+
+.copyright {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+/* For small devices (up to 768px) */
+@media only screen and (max-width: 768px) {
+    .main-section {
+        padding: 16px;
+    }
+    
+    .sub-section {
+        padding: 16px;
+    }
+    
+    .login-card {
+        max-width: 100%;
+    }
+    
+    .signup-buttons {
+        width: 80%;
+    }
+    
+    .signup-buttons img {
+        margin-left: 20px;
+        margin-right: 5%;
+    }
+}
+
+/* For medium devices (769px to 1024px) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .main-section {
+        padding: 24px 32px;
+    }
+    
+    .sub-section {
+        padding: 24px;
+    }
+}
+
+/* For large devices (1025px and above) */
+@media only screen and (min-width: 1025px) {
+    .main-section {
+        padding: 32px 51px;
+    }
+    
+    .sub-section {
+        padding: 32px;
+    }
+}
+
