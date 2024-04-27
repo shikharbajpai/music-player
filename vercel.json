@@ -1,35 +1,49 @@
 {
-    "routes": [
-        {
-            "src": "/(.*\\.css)",
-            "headers": { "Content-Type": "text/css" },
-            "dest": "/$1"
-        },
-        {
-            "src": "/(.*\\.js)",
-            "headers": { "Content-Type": "application/javascript" },
-            "dest": "/$1"
-        },
-        {
-            "src": "/(.*\\.svg)",
-            "headers": { "Content-Type": "image/svg+xml" },
-            "dest": "/$1"
-        },
-        {
-            "src": "/freemusic/(.*)",
-            "dest": "/freemusic/$1"
-        },
-        {
-            "src": "/freemusic\\.json",
-            "dest": "/freemusic.json"
-        },
-        {
-            "src": "/songs\\.json",
-            "dest": "/songs.json"
-        },
-        {
-            "src": "/(.*)",
-            "dest": "/index.html"
-        }
-    ]
+  "routes": [
+    {
+      "src": "/(.*\\.css)",
+      "headers": {
+        "Content-Type": "text/css"
+      },
+      "dest": "/$1"
+    },
+    {
+      "src": "/(.*\\.js)",
+      "headers": {
+        "Content-Type": "application/javascript"
+      },
+      "dest": "/$1"
+    },
+    {
+      "src": "/(.*\\.svg)",
+      "headers": {
+        "Content-Type": "image/svg+xml"
+      },
+      "dest": "/$1"
+    },
+    {
+      "src": "/freemusic/(.*)",
+      "dest": "/freemusic/$1"
+    },
+    {
+      "src": "/populartracks/(.*)",
+      "dest": "/populartracks/$1"
+    },
+    {
+      "src": "/freemusic\\.json",
+      "dest": "/freemusic.json"
+    },
+    {
+      "src": "/populartracks\\.json",
+      "dest": "/populartracks.json"
+    },
+    {
+      "src": "/songs\\.json",
+      "dest": "/songs.json"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
 }
