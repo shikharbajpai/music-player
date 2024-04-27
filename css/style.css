@@ -103,8 +103,10 @@ body {
   font-size: 10px;
   /* font-size: 17px; */
   gap: 13px;
-  position: absolute;
+  /* position: absolute; */
+  position: relative;
   bottom: 0;
+  margin-top: auto;
   padding: 10px 0px;
 }
 
